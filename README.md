@@ -21,15 +21,16 @@
 8.	Настроить параметры устройства в словаре Desired Capabilities в соотвествии с документацией  (http://appium.io/docs/en/about-appium/getting-started/ ) (файл с кодом «calculator_Vasilevskaya_QA.py» словарь desired_caps, строка 10)
 Например:
 
-  <desired_caps = {
-  "deviceName": "my",  # вместо «my» можно вписать любое значение
-  "platformName": "android", # название ОС устройства
-  "platformVersion": "10", # номер версии ОС устройства
-  "udid": "3173a32", # id тестируемого устройства
-  "appPackage": "com.vbanthia.androidsampleapp", # не изменять
-   "appActivity": "com.vbanthia.androidsampleapp.MainActivity"  # не изменять
-  }>
-
+'''python
+  desired_caps = {
+    "deviceName": "my",  # вместо «my» можно вписать любое значение
+    "platformName": "android", # название ОС устройства
+    "platformVersion": "10", # номер версии ОС устройства
+    "udid": "3173a32", # id тестируемого устройства
+    "appPackage": "com.vbanthia.androidsampleapp", # не изменять
+    "appActivity": "com.vbanthia.androidsampleapp.MainActivity"  # не изменять
+  }
+'''
 «udid»  можно узнать с помощью команды «adb devices»
 9.	Запустить сервер Appium (кнопка «Start Server v1.18.0»)
 10.	Подключить устройство, где будет тестироваться приложение
