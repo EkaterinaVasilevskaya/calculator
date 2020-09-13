@@ -18,7 +18,7 @@
 5.	Установить Android SDK (https://developer.android.com/studio/index.html)
 6.	Установить системную переменную ANDROID_SDK_ROOT и указать там путь к Android SDK (например C:\Users\str\AppData\Local\Android\sdk)
 7.	Установить системную переменную JAVA_HOME и указать там путь к папке с Java (например C:\Program Files\Java\jdk-12.0.2)
-8.	Настроить параметры устройства в словаре Desired Capabilities в соотвествии с документацией  (http://appium.io/docs/en/about-appium/getting-started/ ) (файл с кодом «calculator_Vasilevskaya_QA.py» словарь desired_caps, строка 10)
+8.	Настроить параметры устройства в словаре Desired Capabilities в соотвествии с документацией  (http://appium.io/docs/en/about-appium/getting-started/ ) (файл с кодом «calculator_Vasilevskaya.py» словарь desired_caps, строка 10)
 Например:
 
 ```python
