@@ -222,12 +222,12 @@ def testEmpty(button):
 
 # wait application start, then close error message
 try:
-  wait = WebDriverWait(driver, 3)
+  wait = WebDriverWait(driver, 10)
   errorMessage = wait.until(EC.element_to_be_clickable((By.ID,idErrorMessageUpdate)))
   errorButton = driver.find_element_by_id(idErrorButtonOK)
   errorButton.click()
 finally:
-  wait = WebDriverWait(driver, 3)
+  wait = WebDriverWait(driver, 10)
   element = wait.until(EC.element_to_be_clickable((By.ID,idAdditionButton)))
   print("Application started")
 
